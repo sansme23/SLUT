@@ -1,8 +1,7 @@
+@use 'variabler'
 
-@use 'partials'
 
-/*mixins*/
 
 body{
-    background-color: partials.$primary;
+    background-color: variabler.$primary;
 }
