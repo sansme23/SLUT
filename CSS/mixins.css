@@ -1,0 +1,23 @@
+/*emnebox*/
+emne {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(9, 61, 45);
+  padding: 20px;
+  transition: background-color 0.3s;
+  font-size: large;
+}
+emne .content {
+  text-align: center;
+}
+emne .content button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #1a5140;
+  color: rgb(239, 230, 230);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}/*# sourceMappingURL=mixins.css.map */

@@ -1,6 +1,190 @@
-@use 'variabler'
+@use 'variables';
+@use 'mixins';
+
+
+*{
+    box-sizing:border-box;
+    margin:0;
+
+}
+
 
 body{
-    background-color: black;
+    min-height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    background-color: variables.$header;
 }
-    
+
+/*header*/
+
+header{
+    padding: 1.5em;
+    font-size: 2em;
+    .logo{
+        float:left;
+    }
+    .menubar{
+        float: right;
+    }
+    }
+
+    nav{
+        ul{
+            padding: 0;
+            float: right;
+
+            li{
+                display: inline-block;
+                margin-inline: 10px;
+
+                a{
+                    color: variables.$link-hover;
+                    text-decoration: none;
+                    font-family: sans-serif;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+
+/*main*/
+
+
+main{
+    .titel{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-bottom: 3em;
+        padding: 5em;
+        justify-content: center;
+        text-align: center;
+        background-color: variables.$frontpage;
+        font-size: 2em;
+        color: #939F93;
+        font-style: italic;
+
+     } 
+}  
+        
+/*main-menucontainer-box*/
+
+.menucontainer{
+    display: flex;
+    .emne{
+        mixins.@emne;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.emne1{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(203, 225, 211);
+    text-align: center;
+}
+
+.emne2{
+
+    background-color: rgb(204, 221, 209);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.emne3{
+    background-color: #cee4db;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.emne4{
+    background-color: rgb(215, 232, 219);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+/*footer*/
+
+
+
+footer{
+    background-color: #939F93;
+}
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 2em;
+    padding: 3em;
+
+}
+
+.fa-facebook{
+    display:inline-block;
+    color: black;
+    font-size: 4em;
+}
+.fa-instagram{
+    display:inline-block;
+    color: black;
+    font-size: 4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 850px) {
+    ul{
+        display: none;
+    }
+    .menucontainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }}
+
+  @media (min-width: 850px) {
+    .menubar{
+        display: none;
+    }
+    .menucontainer{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        height:40vh;
+    }
+}
+
