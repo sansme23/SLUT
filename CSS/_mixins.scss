@@ -1,0 +1,61 @@
+
+/*emnebox*/
+
+emne{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9, 61, 45);
+    padding: 20px;
+    transition: background-color 0.3s;
+    font-size: large;
+    .content{
+        text-align: center;
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #1a5140;
+            color: rgb(239, 230, 230);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+        
+    }
+}
+
+
+@mixin emnebox($background-color, $text-color, $button-color) {
+    .box {
+      background-color: $background-color;
+      color: $text-color;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      
+      h2 {
+        margin-bottom: 10px;
+      }
+      
+      p {
+        margin-bottom: 20px;
+      }
+      
+      button {
+        padding: 10px 20px;
+        background-color: $button-color;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        
+        &:hover {
+          background-color: darken($button-color, 10%);
+        }
+      }
+    }
+  }
+  
