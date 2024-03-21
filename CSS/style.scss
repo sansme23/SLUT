@@ -75,7 +75,7 @@ main{
 .menucontainer{
     display: flex;
     .emne{
-        mixins.@emne;
+        @include emnebox;
 }
 
 
@@ -187,4 +187,3 @@ footer{
         height:40vh;
     }
 }
-
