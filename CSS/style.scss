@@ -178,7 +178,7 @@ footer{
     }}
 
   @media (min-width: 850px) 
-    .menubar{
+    {menubar{
         display: none;
     }
     menucontainer{
@@ -186,4 +186,5 @@ footer{
         grid-template-columns: 25% 25% 25% 25%;
         height:40vh;
     }
+}
 }
