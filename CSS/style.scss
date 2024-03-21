@@ -177,7 +177,7 @@ footer{
         height: 100vh;
     }}
 
-  @media (min-width: 850px) {
+  @media (min-width: 850px) 
     .menubar{
         display: none;
     }
@@ -186,4 +186,3 @@ footer{
         grid-template-columns: 25% 25% 25% 25%;
         height:40vh;
     }
-}
