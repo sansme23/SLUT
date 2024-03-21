@@ -1,0 +1,8 @@
+
+@use 'partials'
+
+/*mixins*/
+
+body{
+    background-color: partials.$primary;
+}
