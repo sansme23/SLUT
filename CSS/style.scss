@@ -40,7 +40,7 @@ header{
                 margin-inline: 10px;
 
                 a{
-                    color: variables.$link-hover;
+                    color: variables.$header;
                     text-decoration: none;
                     font-family: sans-serif;
                     text-transform: uppercase;
@@ -62,11 +62,9 @@ main{
         padding: 5em;
         justify-content: center;
         text-align: center;
-        background-color: variables.$frontpage;
+        background-color: variables.$header;
         font-size: 2em;
-        color: #939F93;
-        font-style: italic;
-
+        color: #081308;
      } 
 }  
         
