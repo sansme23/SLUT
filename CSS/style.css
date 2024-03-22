@@ -1,5 +1,4 @@
-/*variables*/
-/*back-ground-colors*/
+/*emnebox*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +9,8 @@ body {
   width: 100vw;
   display: grid;
   grid-template-rows: 10% 80% 10%;
-  background-color: #edf3ed;
+  background-color: rgb(14, 68, 57);
+  font-family: "Noto-sans";
 }
 
 /*header*/
@@ -20,6 +20,8 @@ header {
 }
 header .logo {
   float: left;
+  color: rgb(2, 41, 36);
+  font-size: 30px;
 }
 header .menubar {
   float: right;
@@ -34,10 +36,15 @@ nav ul li {
   margin-inline: 10px;
 }
 nav ul li a {
-  color: rgb(40, 208, 152);
+  color: rgb(14, 68, 57);
   text-decoration: none;
   font-family: sans-serif;
   text-transform: uppercase;
+  color: rgb(2, 41, 36);
+  font-size: 30px;
+}
+nav ul li a:hover {
+  color: #19e4c6;
 }
 
 /*main*/
@@ -49,30 +56,30 @@ main .titel {
   padding: 5em;
   justify-content: center;
   text-align: center;
-  background-color: #96d2bc;
+  background-color: rgb(14, 68, 57);
   font-size: 2em;
-  color: #939F93;
-  font-style: italic;
+  color: #081308;
 }
 
 /*main-menucontainer-box*/
 .menucontainer {
   display: flex;
 }
-.menucontainer .emne {
+
+.emne {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(9, 61, 45);
+  background-color: rgb(61, 9, 33);
   padding: 20px;
   transition: background-color 0.3s;
   font-size: large;
 }
-.menucontainer .emne .content {
+.emne .content {
   text-align: center;
 }
-.menucontainer .emne .content button {
+.emne .content button {
   margin-top: 10px;
   padding: 5px 10px;
   background-color: #1a5140;
@@ -153,10 +160,10 @@ footer {
   }
 }
 @media (min-width: 850px) {
-  .menubar {
+  menubar {
     display: none;
   }
-  .menucontainer {
+  menucontainer {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     height: 40vh;

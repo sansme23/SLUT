@@ -1,31 +1,14 @@
+@use'variables';
 
 /*emnebox*/
 
-@mixin emnebox{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(61, 9, 33);
-    padding: 20px;
-    transition: background-color 0.3s;
-    font-size: large;
-    .content{
-        text-align: center;
-        button {
-            margin-top: 10px;
-            padding: 5px 10px;
-            background-color: #1a5140;
-            color: rgb(239, 230, 230);
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            
-        }
-        
+@mixin hover-effect {
+    &:hover {
+        color: #19e4c6;
     }
 }
 
-
-
-  
+@mixin navlinks {
+    color: variables.$footer;
+    font-size: 30px;
+}

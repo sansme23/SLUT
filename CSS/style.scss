@@ -8,13 +8,13 @@
 
 }
 
-
 body{
     min-height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-rows: 10% 80% 10%;
     background-color: variables.$header;
+    font-family: "Noto-sans";
 }
 
 /*header*/
@@ -24,6 +24,7 @@ header{
     font-size: 2em;
     .logo{
         float:left;
+        @include mixins.navlinks;
     }
     .menubar{
         float: right;
@@ -44,6 +45,8 @@ header{
                     text-decoration: none;
                     font-family: sans-serif;
                     text-transform: uppercase;
+                    @include mixins.navlinks;
+                    @include mixins.hover-effect;
                 }
             }
         }
@@ -72,12 +75,33 @@ main{
 
 .menucontainer{
     display: flex;
-    .emne{
-        @include emnebox;
 }
 
 
-
+.emne{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(61, 9, 33);
+    padding: 20px;
+    transition: background-color 0.3s;
+    font-size: large;
+    .content{
+        text-align: center;
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #1a5140;
+            color: rgb(239, 230, 230);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+        
+    }
+}
 
 
 
@@ -104,7 +128,6 @@ main{
     justify-content: center;
     font-size: 2em;
     text-align: center;
-
 }
 
 .emne3{
@@ -131,9 +154,7 @@ main{
 
 
 
-footer{
-    background-color: #939F93;
-}
+
 .footer-container{
     display: flex;
     flex-direction: row;
@@ -184,5 +205,4 @@ footer{
         grid-template-columns: 25% 25% 25% 25%;
         height:40vh;
     }
-}
 }

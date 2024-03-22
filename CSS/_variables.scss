@@ -1,1 +1,13 @@
-$header:black;
+@use 'mixins';
+@use 'variables';
+
+//variables-color
+
+$header:rgb(14, 68, 57);
+$beige:#7C857C;
+$footer:#939F93;
+
+
+//variables -tekst
+
+$overskrift:20px;
