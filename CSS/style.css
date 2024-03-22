@@ -9,7 +9,6 @@ body {
   width: 100vw;
   display: grid;
   grid-template-rows: 10% 80% 10%;
-  background-color: rgb(14, 68, 57);
   font-family: "Noto-sans";
 }
 

@@ -21,10 +21,9 @@ body{
 header{
     padding: 1.5em;
     font-size: 2em;
-    background-color: variables.$header;
+    background-color: variables.$beige;
     .logo{
         float:left;
-        @include mixins.navlinks;
     }
     .menubar{
         float: right;
@@ -67,7 +66,7 @@ main{
         text-align: center;
         background-color: variables.$header;
         font-size: 2em;
-        color: #081308;
+        color: #22df22;
      } 
 }  
         
@@ -102,12 +101,6 @@ main{
         
     }
 }
-
-
-
-
-
-
 
 
 
@@ -152,9 +145,6 @@ main{
 
 /*footer*/
 
-
-
-
 .footer-container{
     display: flex;
     flex-direction: row;
@@ -174,15 +164,6 @@ main{
     color: black;
     font-size: 4em;
 }
-
-
-
-
-
-
-
-
-
 
 
 

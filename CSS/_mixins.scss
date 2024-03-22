@@ -1,4 +1,4 @@
-@use'variables';
+
 
 /*emnebox*/
 
@@ -8,7 +8,3 @@
     }
 }
 
-@mixin navlinks {
-    color: variables.$footer;
-    font-size: 30px;
-}
