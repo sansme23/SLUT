@@ -1,10 +1,16 @@
 
 
-/*emnebox*/
+//hover
 
 @mixin hover-effect {
     &:hover {
-        color: #19e4c6;
+        color: #19e4ae;
     }
 }
 
+@mixin hover-box {
+    &:hover {
+        background-color: rgb(84, 188, 164);
+    }
+
+}

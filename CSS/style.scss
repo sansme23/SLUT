@@ -2,21 +2,23 @@
 @use 'mixins';
 
 
+//generelt css
+
 *{
     box-sizing:border-box;
     margin:0;
-
 }
 
 body{
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-rows: 10% 80% 10%;
-    font-family: "Noto-sans";
+    grid-template-rows: 180px 15fr auto;
+    font-family: "Noto sans";
+    background-color: variables.$beige;
 }
 
-/*header*/
+//header/nav styling
 
 header{
     padding: 1.5em;
@@ -44,15 +46,15 @@ header{
                     text-decoration: none;
                     font-family: sans-serif;
                     text-transform: uppercase;
-                    @include mixins.navlinks;
                     @include mixins.hover-effect;
+                    color: variables.$text;
                 }
             }
         }
     }
 
 
-/*main*/
+//main /sidetitel og beskrivelse
 
 
 main{
@@ -64,16 +66,26 @@ main{
         padding: 5em;
         justify-content: center;
         text-align: center;
-        background-color: variables.$header;
+        background-color: variables.$beige;
         font-size: 2em;
-        color: #22df22;
+        font-family: sans-serif;
+        h1{
+        font-size: 2em;
+        color: #45c79e;
+        }
+        h2{
+        font-size: 0.8em;
+        font-style: italic;
+        }
+
      } 
 }  
         
-/*main-menucontainer-box*/
+//menu-emne box
 
 .menucontainer{
     display: flex;
+    height: 13em;
 }
 
 
@@ -83,16 +95,19 @@ main{
     justify-content: center;
     align-items: center;
     background-color: rgb(61, 9, 33);
+    @include mixins.hover-box;
     padding: 20px;
     transition: background-color 0.3s;
-    font-size: large;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
     .content{
         text-align: center;
         button {
             margin-top: 10px;
             padding: 5px 10px;
-            background-color: #1a5140;
-            color: rgb(239, 230, 230);
+            background-color: #d9eae5;
+            color: rgb(9, 2, 2);
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -109,36 +124,34 @@ main{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    background-color: rgb(203, 225, 211);
+    background-color: rgb(12, 74, 62);
     text-align: center;
+   
 }
 
 .emne2{
 
-    background-color: rgb(204, 221, 209);
+    background-color: rgb(18, 83, 66);
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    font-size: 2em;
     text-align: center;
 }
 
 .emne3{
-    background-color: #cee4db;
+    background-color: #499b93;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    font-size: 2em;
     text-align: center;
 
 }
 
 .emne4{
-    background-color: rgb(215, 232, 219);
+    background-color: rgb(19, 89, 81);
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    font-size: 2em;
     text-align: center;
 }
 
@@ -151,6 +164,7 @@ main{
     justify-content: end;
     gap: 2em;
     padding: 3em;
+    background-color: variables.$footer;
 
 }
 
@@ -158,11 +172,14 @@ main{
     display:inline-block;
     color: black;
     font-size: 4em;
+    @include mixins.hover-effect;
+
 }
 .fa-instagram{
     display:inline-block;
     color: black;
     font-size: 4em;
+    @include mixins.hover-effect;
 }
 
 
@@ -177,8 +194,8 @@ main{
         height: 100vh;
     }}
 
-  @media (min-width: 850px) 
-    {menubar{
+  @media (min-width: 850px) {
+    .menubar{
         display: none;
     }
     menucontainer{

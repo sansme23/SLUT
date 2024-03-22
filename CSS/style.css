@@ -1,26 +1,24 @@
-/*emnebox*/
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: 10% 80% 10%;
-  font-family: "Noto-sans";
+  grid-template-rows: 180px 15fr auto;
+  font-family: "Noto sans";
+  background-color: #7C857C;
 }
 
-/*header*/
 header {
   padding: 1.5em;
   font-size: 2em;
+  background-color: #7C857C;
 }
 header .logo {
   float: left;
-  color: rgb(2, 41, 36);
-  font-size: 30px;
 }
 header .menubar {
   float: right;
@@ -35,18 +33,16 @@ nav ul li {
   margin-inline: 10px;
 }
 nav ul li a {
-  color: rgb(14, 68, 57);
+  color: rgb(89, 181, 163);
   text-decoration: none;
   font-family: sans-serif;
   text-transform: uppercase;
-  color: rgb(2, 41, 36);
-  font-size: 30px;
+  color: rgb(18, 21, 18);
 }
 nav ul li a:hover {
-  color: #19e4c6;
+  color: #19e4ae;
 }
 
-/*main*/
 main .titel {
   display: flex;
   flex-direction: column;
@@ -55,14 +51,22 @@ main .titel {
   padding: 5em;
   justify-content: center;
   text-align: center;
-  background-color: rgb(14, 68, 57);
+  background-color: #7C857C;
   font-size: 2em;
-  color: #081308;
+  font-family: sans-serif;
+}
+main .titel h1 {
+  font-size: 2em;
+  color: #45c79e;
+}
+main .titel h2 {
+  font-size: 0.8em;
+  font-style: italic;
 }
 
-/*main-menucontainer-box*/
 .menucontainer {
   display: flex;
+  height: 13em;
 }
 
 .emne {
@@ -73,7 +77,12 @@ main .titel {
   background-color: rgb(61, 9, 33);
   padding: 20px;
   transition: background-color 0.3s;
-  font-size: large;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.emne:hover {
+  background-color: rgb(84, 188, 164);
 }
 .emne .content {
   text-align: center;
@@ -81,8 +90,8 @@ main .titel {
 .emne .content button {
   margin-top: 10px;
   padding: 5px 10px;
-  background-color: #1a5140;
-  color: rgb(239, 230, 230);
+  background-color: #d9eae5;
+  color: rgb(9, 2, 2);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -92,48 +101,42 @@ main .titel {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  background-color: rgb(203, 225, 211);
+  background-color: rgb(12, 74, 62);
   text-align: center;
 }
 
 .emne2 {
-  background-color: rgb(204, 221, 209);
+  background-color: rgb(18, 83, 66);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  font-size: 2em;
   text-align: center;
 }
 
 .emne3 {
-  background-color: #cee4db;
+  background-color: #499b93;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  font-size: 2em;
   text-align: center;
 }
 
 .emne4 {
-  background-color: rgb(215, 232, 219);
+  background-color: rgb(19, 89, 81);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  font-size: 2em;
   text-align: center;
 }
 
 /*footer*/
-footer {
-  background-color: #939F93;
-}
-
 .footer-container {
   display: flex;
   flex-direction: row;
   justify-content: end;
   gap: 2em;
   padding: 3em;
+  background-color: #939F93;
 }
 
 .fa-facebook {
@@ -141,11 +144,17 @@ footer {
   color: black;
   font-size: 4em;
 }
+.fa-facebook:hover {
+  color: #19e4ae;
+}
 
 .fa-instagram {
   display: inline-block;
   color: black;
   font-size: 4em;
+}
+.fa-instagram:hover {
+  color: #19e4ae;
 }
 
 @media (max-width: 850px) {
@@ -159,7 +168,7 @@ footer {
   }
 }
 @media (min-width: 850px) {
-  menubar {
+  .menubar {
     display: none;
   }
   menucontainer {
