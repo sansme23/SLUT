@@ -13,7 +13,6 @@ body{
     width: 100vw;
     display: grid;
     grid-template-rows: 10% 80% 10%;
-    background-color: variables.$header;
     font-family: "Noto-sans";
 }
 
@@ -22,6 +21,7 @@ body{
 header{
     padding: 1.5em;
     font-size: 2em;
+    background-color: variables.$header;
     .logo{
         float:left;
         @include mixins.navlinks;
