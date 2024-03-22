@@ -72,6 +72,7 @@ main{
         h1{
         font-size: 2em;
         color: #45c79e;
+        font-family: sans-serif;
         }
         h2{
         font-size: 0.8em;
@@ -80,11 +81,76 @@ main{
 
      } 
 }  
+
+
+.underside{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 4em;
+
+    .underside-titel{
+        font-family: sans-serif;
+        font-size: 50px;
+        }
+
+}
+    
+
+.underside-container{
+    .emnebeskrivelse{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(7, 63, 50);
+        height: 100vh;
+        margin-left: 15%;
+        color: #d9eae5;
+        font-size: 30px;
+        font-family: sans-serif;
+        padding-inline: 30px;
+        text-align: center;
+
+        .emnebillede{
+                background-color: rgb(203, 159, 159);
+                height: 6em;
+                margin-top: 3em;
+                text-align: center;
+                margin-right: 0;
+                
+
+}
+    }}
+
+
+
+   
+
+
+
+        
+
+        
+
+
+
+        
+
+
+   
+
+
+    
+
+
+
+
         
 //menu-emne box
 
 .menucontainer{
     display: flex;
+    height: auto;
 }
 
 

@@ -5,7 +5,7 @@
 
 body {
   height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   display: grid;
   grid-template-rows: 180px 15fr auto;
   font-family: "Noto sans";
@@ -58,15 +58,48 @@ main .titel {
 main .titel h1 {
   font-size: 2em;
   color: #45c79e;
+  font-family: sans-serif;
 }
 main .titel h2 {
   font-size: 0.8em;
   font-style: italic;
 }
 
+.underside {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  padding-bottom: 4em;
+}
+.underside .underside-titel {
+  font-family: sans-serif;
+  font-size: 50px;
+}
+
+.underside-container .emnebeskrivelse {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(7, 63, 50);
+  height: 100vh;
+  margin-left: 15%;
+  color: #d9eae5;
+  font-size: 30px;
+  font-family: sans-serif;
+  padding-inline: 30px;
+  text-align: center;
+}
+.underside-container .emnebeskrivelse .emnebillede {
+  background-color: rgb(203, 159, 159);
+  height: 6em;
+  margin-top: 3em;
+  text-align: center;
+  margin-right: 0;
+}
+
 .menucontainer {
   display: flex;
-  height: 13em;
+  height: auto;
 }
 
 .emne {
